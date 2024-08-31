@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    [SerializeField] GameObject player;
     [SerializeField] float cameraOffsetX = 10f;
+    GameObject player;
     // Start is called before the first frame update
     void Start()
     {

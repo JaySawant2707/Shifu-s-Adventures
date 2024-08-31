@@ -20,6 +20,7 @@ public class CrashDetector : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Obstacle")){
             animator.SetBool("Crashed", true);
+            Invoke("ReloadLevel", relodeDelay);
         }
     }
 
