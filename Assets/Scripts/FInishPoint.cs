@@ -18,6 +18,7 @@ public class FinishPoint : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             finishParticles.Play();
+            GetComponent<AudioSource>().Play();
             cd.Invoke("ReloadLevel", relodeDelay);
         }
     }
