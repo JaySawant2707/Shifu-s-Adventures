@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public class Playercontroller : MonoBehaviour
@@ -60,11 +56,11 @@ public class Playercontroller : MonoBehaviour
     {
         if (rb2d.velocity.y > 0f && isGrounded)
         {
-            surfaceEffector2D.speed = speedOnGoingUp;
+            surfaceEffector2D.speed = speedOnGoingUp;//change speed while going up hill
         }
         else if (rb2d.velocity.y < 0f && isGrounded)
         {
-            surfaceEffector2D.speed = 30f;
+            surfaceEffector2D.speed = 30f;//change speed while going down hill
         }
     }
 
